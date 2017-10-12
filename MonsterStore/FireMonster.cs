@@ -14,7 +14,7 @@ namespace MonsterStore
         public int Water { get; set; }
         public int Earth { get; set; }
         public IMediator Mediator { get; set; }
-        public bool IsKO => Health == 0;
+        public bool IsKO => Health <= 0;
 
         public FireMonster(IMediator m)
         {
